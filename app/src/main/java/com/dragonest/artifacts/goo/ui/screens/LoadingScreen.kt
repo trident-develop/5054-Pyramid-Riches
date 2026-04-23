@@ -1,5 +1,6 @@
 package com.dragonest.artifacts.goo.ui.screens
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.EaseInOutSine
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -55,6 +56,7 @@ import kotlin.random.Random
 
 @Composable
 fun LoadingScreen(modifier: Modifier = Modifier) {
+    BackHandler(enabled = true) {}
     EgyptBackground(modifier = modifier.fillMaxSize(), dimContent = true) {
         PulsingRings()
         FloatingSparkles()
