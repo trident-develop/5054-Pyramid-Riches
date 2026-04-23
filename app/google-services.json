@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34210252480",
+    "project_id": "pyramid-riches-fe3dc",
+    "storage_bucket": "pyramid-riches-fe3dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34210252480:android:3be7dae6b23df7ff784f25",
+        "android_client_info": {
+          "package_name": "com.dragonest.artifacts.goo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSrg1poUQgYnbFM60EdPwK-TRlAE5vA64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
