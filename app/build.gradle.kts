@@ -7,6 +7,14 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.services)
     alias(libs.plugins.firebase.crashlytics)
+    alias(libs.plugins.lsparanoid)
+}
+
+lsparanoid {
+    seed = 38
+    classFilter = { it.startsWith("com.dragonest.artifacts.goo") }
+    includeDependencies = true
+    variantFilter = { true }
 }
 
 android {
@@ -21,8 +29,8 @@ android {
         applicationId = "com.dragonest.artifacts.goo"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,6 +54,17 @@ android {
 }
 
 dependencies {
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.koin.compose.viewmodel)
+    implementation(libs.orbit.viewmodel)
+    implementation(libs.orbit.compose)
+    implementation(libs.arrow.core)
+    implementation(libs.arrow.fx.coroutines)
+    implementation(libs.okhttp)
+    implementation(libs.installreferrer)
+    implementation(libs.datastore.preferences)
+    implementation(libs.androidx.fragment.ktx)
     implementation(libs.play.services.ads)
     implementation(libs.firebase.messaging)
     implementation(platform(libs.firebase.bom))
