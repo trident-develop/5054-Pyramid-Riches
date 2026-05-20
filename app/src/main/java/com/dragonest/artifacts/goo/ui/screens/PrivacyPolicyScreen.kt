@@ -89,7 +89,7 @@ fun PrivacyPolicyScreen(onBack: () -> Unit) {
                                     return false
                                 }
                             }
-                            loadUrl("https://telegra.ph/Privacy-Policy-for-Pyramid-Riches-04-23")
+                            loadUrl("https://telegra.ph/Privacy-Policy-for-Scarab-VaultX-05-20-2")
                         }
                         addView(
                             webView, FrameLayout.LayoutParams(

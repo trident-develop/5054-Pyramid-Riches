@@ -139,7 +139,7 @@ private fun ShimmerTitle() {
                 )
         )
         Text(
-            text = "Pyramid Riches".uppercase(),
+            text = "Scarab VaultX".uppercase(),
             style = TextStyle(
                 fontFamily = EgyptFontFamily,
                 fontSize = 40.sp,

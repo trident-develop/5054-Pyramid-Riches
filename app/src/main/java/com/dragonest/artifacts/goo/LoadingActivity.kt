@@ -39,6 +39,11 @@ class LoadingActivity : ComponentActivity() {
         if (hasFocus) hideSystemBars()
     }
 
+    override fun onResume() {
+        super.onResume()
+        hideSystemBars()
+    }
+
     override fun onDestroy() {
         TV3.destroy()
         super.onDestroy()
